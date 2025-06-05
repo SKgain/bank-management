@@ -1,0 +1,90 @@
+/* Set the background color of the body */
+body {
+    background-color: rgb(176, 230, 181);
+    font-family: sans-serif; /* Set a default font for the body */
+  }
+  
+  /* Style the welcome message */
+  h2 {
+    margin-top: 20px; /* Add some margin from the top */
+    text-align: center; /* Center align the text */
+  }
+  
+  /* Style the menu title */
+  h3 {
+    margin-top: 20px; /* Add some margin from the top */
+  }
+  
+  /* Style the navigation bar */
+  nav {
+    background-color: #b5cc44; /* Light gray background for the navigation */
+    padding: 10px;
+    margin: 10px auto; /* Add padding and center the navigation horizontally */
+    border-radius: 5px; /* Add some rounded corners */
+  }
+  
+  /* Style the navigation list items */
+  nav ul li {
+    display: inline-block;
+    list-style: none; /* Remove default bullet points */
+    margin-bottom: 10px; /* Add some space between list items */
+  }
+  
+  /* Style the navigation links */
+  nav a {
+    text-decoration: none; /* Remove underlines from links */
+    color: black;
+    padding: 10px 20px; /* Add padding to links */
+    display: block; /* Make links take full width of list item */
+  }
+  
+  /* Style the hover effect for navigation links */
+  nav a:hover {
+    background-color: #ddd; /* Change background color on hover */
+  }
+  
+  /* Style the logout button */
+  button {
+    background-color: #4CAF50; /* Green color for the button */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; /* Add rounded corners */
+  }
+  
+  /* Style the hover effect for the logout button */
+  button:hover {
+    background-color: #3e8e41; /* Darken the button on hover */
+  }
+  ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 10px auto; /* Add some margin and center horizontally */
+  }
+  
+  /* Style the navigation list items */
+  ul li {
+    display: inline-block; /* Display list items inline for horizontal layout */
+    margin-right: 20px; /* Add some space between list items */
+  }
+  
+  /* Style the navigation links */
+  ul li a {
+    text-decoration: none; /* Remove underlines from links */
+    color: black;
+    padding: 10px 20px; /* Add padding to links */
+  }
+  
+  /* Style the hover effect for navigation links */
+  ul li a:hover {
+    background-color: #ddd; /* Change background color on hover */
+  }
+
+
+  

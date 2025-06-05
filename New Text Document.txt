@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page-Nexus Bank</title>
+        <link rel="icon" type="image/x-icon" href="logo.ico"> 
+        
+    </head>
+    <body style="background-color:powderblue;">
+
+        
+        
+        <h2>
+        <p
+             style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; text-align: left; text-shadow: .5cm;"><img src="logo.png" height="50" width="50">
+              Nexus Bank Ltd.
+        </p></h2>
+   <br><br><br>
+    <p style="border:rgb(61, 2, 2) 5px SOLID">
+   <h3><ul type="disk" style="border:BLACK 3px SOLID">
+        <h2><li><a href="loginform.html"target="_blank">New User Registration</a></li></h2>
+        <h2><li><a href="userlogin.html">User login</a></li></h2>
+        <h2><li><a href="adminlogin.html">Admin login</a></li></h2>
+    </ul></h3> 
+</p>
+<br><br><br><br><br><br><br><br><br><h3>
+    <marquee direction="left">
+         Welcome to Nexus Bank Ltd.
+</marquee></h3>
+<h4>Copyright &copy; 2024 - Nexus Bank Ltd.  All rights reserved.</h4>
+
+
+    </body>
+</html>

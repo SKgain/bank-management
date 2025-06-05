@@ -1,0 +1,30 @@
+body {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(176, 230, 181);
+    min-height: 75vh;
+  }
+  .container {
+    background-color: #f8f9f6;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+  h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  
+  

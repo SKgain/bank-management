@@ -1,0 +1,27 @@
+.burger-bar {
+    position: relative; /* Needed for menu positioning */
+    display: flex; /* Makes button and nav elements sit side-by-side */
+    justify-content: space-between; /* Aligns items at opposite ends */
+  }
+  
+  .burger-button {
+    background-color: transparent; /* Transparent background */
+    border: none; /* Removes default button border */
+    padding: 10px; /* Padding for spacing */
+    cursor: pointer; /* Indicates clickable element */
+  }
+  
+  .burger-nav {
+    display: none; /* Initially hide the navigation */
+    position: absolute; /* Positions menu on top of main content */
+    top: 100%; /* Positions menu below the button */
+    right: 0; /* Positions menu to the right */
+    background-color: white; /* Background color for menu */
+    width: 150px; /* Set a width for the menu */
+    padding: 10px;  /* Add some padding */
+  }
+  
+  .burger-bar.active .burger-nav {
+    display: block; /* Show navigation when active */
+  }
+  

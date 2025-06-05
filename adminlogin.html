@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal - Nexus Bank</title>
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --primary-dark: #1e40af;
+            --secondary-color: #10b981;
+            --dark-color: #1f2937;
+            --light-color: #f9fafb;
+            --gray-color: #6b7280;
+            --error-color: #ef4444;
+            --admin-accent: #7c3aed;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+            color: var(--dark-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            background-color: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 480px;
+            padding: 40px;
+            text-align: center;
+            border-top: 4px solid var(--admin-accent);
+        }
+        
+        .logo {
+            margin-bottom: 20px;
+        }
+        
+        .logo img {
+            height: 50px;
+        }
+        
+        h1 {
+            color: var(--admin-accent);
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+        
+        .subtitle {
+            color: var(--gray-color);
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .form-group {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            position: relative;
+        }
+        
+        label {
+            font-weight: 500;
+            color: var(--dark-color);
+            font-size: 0.95rem;
+        }
+        
+        input {
+            padding: 14px 16px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+        
+        input:focus {
+            outline: none;
+            border-color: var(--admin-accent);
+            box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
+        }
+        
+        input::placeholder {
+            color: #9ca3af;
+        }
+        
+        .btn {
+            background-color: var(--admin-accent);
+            color: white;
+            padding: 14px;
+            border-radius: 8px;
+            font-weight: 500;
+            font-family: 'Poppins', sans-serif;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+        
+        .btn:hover {
+            background-color: #6d28d9;
+            transform: translateY(-2px);
+        }
+        
+        .security-notice {
+            background-color: #f5f3ff;
+            border-radius: 8px;
+            padding: 12px;
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: var(--gray-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .security-notice svg {
+            color: var(--admin-accent);
+            flex-shrink: 0;
+        }
+        
+        .home-link {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e5e7eb;
+        }
+        
+        .home-link a {
+            color: var(--gray-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s ease;
+        }
+        
+        .home-link a:hover {
+            color: var(--admin-accent);
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 25px;
+            }
+            
+            h1 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="Nexus Bank Logo">
+        </div>
+        
+        <h1>Administrator Portal</h1>
+        <p class="subtitle">Restricted access to authorized personnel only</p>
+        
+        <form action="adminlogin.php" method="POST">
+            <div class="form-group">
+                <label for="AdminID">Admin ID</label>
+                <input type="text" id="AdminID" name="AdminID" placeholder="Enter your admin ID" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="apass">Password</label>
+                <input type="password" id="apass" name="apass" placeholder="Enter your password" required>
+            </div>
+            
+            <button type="submit" name="submit" class="btn">Authenticate</button>
+        </form>
+        
+        <div class="security-notice">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+            </svg>
+            <span>This system is monitored. Unauthorized access is prohibited.</span>
+        </div>
+        
+        <div class="home-link">
+            <a href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+                </svg>
+                Return to Homepage
+            </a>
+        </div>
+    </div>
+</body>
+</html>

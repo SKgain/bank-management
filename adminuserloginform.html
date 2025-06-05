@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admin Panel-Nexus Bank </title>
+        <link rel="icon" type="image/x-icon" href="logo.ico"> 
+        <link rel="stylesheet" href="loginform.css">
+    </head>
+    <body style="background-color:rgb(202, 230, 176);">
+        <div class="container">
+        <h2 id="Head1">Registration Form</h2>
+        <form action="adminuserloginform.php" method="POST"">
+            <div>
+                <label for="fname" >First Name: </label><br>
+                <input name="fname" type="text" id="fname" placeholder="Enter The First Name" required ><br>
+                <label for="lname" >Last Name: </label><br>
+                <input name="lname" type="text" id="lname" placeholder="Enter The Last Name" required ><br>
+            </div>
+            <div>
+                <label for="email">Email: </label><br>
+                <input name="email" type="email" id="email" placeholder="Enter The Email" required><br>
+            </div>
+            <div>
+                <label for="pass">Password: </label><br>
+                <input name="pass" type="password" id="pass" placeholder="Enter The Password" required><br>
+            </div>
+            <div>
+                <label for="dob">Date of Birth: </label><br>
+                <input type="date" name="dob" id="dob" value="dob" required>
+
+            </div>
+            <div>
+                <label for="gender">Gender: </label><br>
+                <input name="gender" type="radio" id="gender" value="male" checked>Male
+                <input name="gender" type="radio" id="gender" value="female" >Female
+            </div>
+            <div>
+                <label for="actype">Account Type: </label><br>
+                <select name="actype">
+                    <option value="SavingsAccounts" selected>Savings accounts</option><br>
+                    <option value="CheckingAccounts" >Checking accounts</option><br>
+                    <option value="MoneyMarketAccounts" >Money market accounts (MMAs)</option><br>
+                    <option value="CertificateOfDepositAccounts">Certificate of deposit accounts (CDs)</option><br>
+                </select>
+            </div>
+            <div>
+                <label for="submit"></label><br>
+                <b><input type="submit" name="submit" value="Registration"></b>
+                
+            </div>
+            
+            
+
+
+        </form>
+        <div>
+            <br><br><p><a href="adminpanel.php"><button>Back</button></a></p>
+         </div>
+        </div>
+
+    </body>
+</html>
